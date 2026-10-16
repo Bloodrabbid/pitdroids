@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icon-192.png" />
+  <link rel="apple-touch-icon" href="./icon-192.png" />
+  <title>Pit Droids</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; overflow: hidden; touch-action: none;
+      -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+    #screen { position: absolute; image-rendering: auto; background: #000; }
+    #boot { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      color: #c9b78a; font: 16px/1.4 system-ui, sans-serif; text-align: center; padding: 16px; }
+    #boot button { margin-top: 16px; font: inherit; padding: 10px 22px; background: #3a2f1c; color: #f0e0b0;
+      border: 1px solid #8a7444; border-radius: 6px; }
+    #boot .bar { width: 260px; height: 6px; background: #222; margin: 12px auto 0; border-radius: 3px; overflow: hidden; }
+    #boot .bar i { display: block; height: 100%; width: 0; background: #c9a24a; }
+  </style>
+  <script type="module" crossorigin src="./app/index-BTsfpuGc.js"></script>
+</head>
+<body>
+  <canvas id="screen" width="640" height="480"></canvas>
+  <div id="boot"><div><div id="boot-msg">Loading…</div><div class="bar"><i id="boot-bar"></i></div></div></div>
+</body>
+</html>
